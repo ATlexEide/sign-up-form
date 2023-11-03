@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign up!</title>
     <link rel="stylesheet" href="/css/style.css">
-    <script src="/js/script.js" defer></script>
+    <script src="js/script.js" defer></script>
 </head>
 <body>
     <div id="one">
@@ -35,10 +35,10 @@
             <fieldset>
                 <legend><h1>Password</h1></legend>
                 <label for="Password">New Password:</label>
-                <input type="password" name="password" id="password" placeholder="password123! (don't use that)" required>
+                <input type="password" name="password" id="password" placeholder="password123! (don't use that)" onkeyup="check()" required>
                 <span></span>
                 <label for="confirmpwd">Confirm Password:</label>
-                <input type="password" name="confirmpwd" id="confirmpwd" placeholder="Confirm password" required>
+                <input type="password" name="confirmpwd" id="confirmpwd" placeholder="Confirm password" onkeyup="check()" required>
                 <span></span>
             </fieldset>
             <button type="submit">Sign up!</button>
