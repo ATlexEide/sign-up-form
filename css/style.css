@@ -2,8 +2,13 @@
     --fw: 66vw;
 }
 
+@font-face {
+    font-family: spaceFont;
+    src: url(/fonts/aspace_demo.otf);
+}
+
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: spaceFont;
     margin: 0;
     padding: 0;
     display: flex;
@@ -53,31 +58,32 @@ legend h1 {
 form {
     display: flex;
     flex-direction: column;
-    width: 45%;
-    height: 65%;
+    width: calc(var(--fw) - 45%);
+    height: 70%;
     background-color: white;
     border-radius: 2%;
 }
 
 
 fieldset {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
     border: none;
-    width: 100%;
 }
 
-fieldset:not(:last-of-type) {
-    margin-bottom: 30px;
-}
 
 label {
     display: inline-block;
-    width: 100px;
+    width: 200px;
 }
 
 input {
-    width: 400px;
+    max-width: 250px;
     height: 25px;
     border-radius: 5px;
+    margin-bottom: 10px;
 }
 
 input:required:invalid:not(:placeholder-shown) {
@@ -90,22 +96,29 @@ input:required:valid:not(:placeholder-shown) {
     border: solid 2px rgb(93, 154, 3);
 }
 
+input:required+span::after {
+    position: absolute;
+    right: -7px;
+    bottom: 25px;
+    content: '*';
+}
+
 form button[type="submit"] {
     height: 50px;
     width: 200px;
-    margin-left: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(24, 24, 24);
+    border-radius: 10px;
+    border: 2px solid silver;
+    color: white;
+    font-weight: 700;
 }
 
 span {
     position: relative;
 }
 
-input:required+span::after {
-    position: absolute;
-    right: -10px;
-    content: '*';
-    font-size: 20px;
-}
 
 #formHeader {
     background-color: rgb(24, 24, 24);
@@ -117,5 +130,9 @@ input:required+span::after {
 
 #formTitle a {
     color: white;
+    text-decoration: none;
+}
+
+a {
     text-decoration: none;
 }
