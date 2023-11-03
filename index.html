@@ -3,9 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sign up!</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/script.js" defer></script>
 </head>
 <body>
-    
+    <div id="one">
+        <div style="margin-top: 50px;"><img id="logo" src="/img/logo.png" alt=""></div>
+        <div style="height: 0; margin-top: 50px; color: white; font-style: italic; font-size: larger;">To the moon!</div>
+    </div>
+    <div id="two">
+        <form action="">
+            <div id="formHeader">
+                <h1 id="formTitle" style="text-align: center;"><a href="https://roselynwill.com/">Suck it giraffe</a></h1>
+            </div>
+            <fieldset>
+                <legend><h1>Name</h1>:</legend>
+                <label for="firstName">First Name:</label>
+                <input type="text" name="firstName" id="firstName" placeholder="Navn" required>
+                <span></span>
+                <label for="lastName">Last Name:</label>
+                <input type="text" name="lastName" id="lastName" placeholder="Navnesen" required>
+                <span></span>
+            </fieldset>
+            <fieldset>
+                <legend><h1>Contact Info:</h1></legend>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="example@mail.com" required>
+                <span></span>
+                <label for="mobile">Phone number:</label>
+                <input type="tel" name="mobile" id="mobile" placeholder="Ring Ring">
+            </fieldset>
+            <fieldset>
+                <legend><h1>Password</h1></legend>
+                <label for="Password">Password:</label>
+                <input type="password" name="password" id="password" placeholder="password123! (don't use that)" required>
+                <span></span>
+                <label for="confirmpwd">Confirm Password:</label>
+                <input type="password" name="confirmpwd" id="confirmpwd" placeholder="Confirm password" required>
+                <span></span>
+            </fieldset>
+            <button type="submit">Sign up!</button>
+        </form>
+    </div>
 </body>
 </html>
