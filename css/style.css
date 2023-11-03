@@ -38,7 +38,7 @@ body {
 
 #logo {
     aspect-ratio: 1;
-    height: 240px;
+    height: 80%;
 }
 
 #two {
@@ -81,7 +81,7 @@ label {
 }
 
 input {
-    max-width: 250px;
+    width: 96%;
     height: 25px;
     border-radius: 5px;
     margin-bottom: 10px;
