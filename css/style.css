@@ -4,7 +4,7 @@
 
 @font-face {
     font-family: spaceFont;
-    src: url(/fonts/aspace_demo-webfont.woff);
+    src: url(../fonts/aspace_demo-webfont.woff);
 }
 
 body {
